@@ -6,21 +6,13 @@ node_modules/
 dist/
 web-build/
 expo-env.d.ts
-*.hprof
+
+# Native (regenerated via prebuild)
+/android
+/ios
 
 # EAS
 .eas/
-
-# Native builds
-ios/Pods/
-ios/build/
-android/build/
-android/app/build/
-android/.gradle/
-*.apk
-*.aab
-*.ipa
-*.app
 
 # Signing
 *.jks
@@ -32,11 +24,6 @@ android/.gradle/
 
 # Metro
 .metro-health-check*
-
-# Debug
-npm-debug.*
-yarn-debug.*
-yarn-error.*
 
 # Env
 .env
@@ -50,16 +37,10 @@ Thumbs.db
 .cursor/
 .idea/
 .vscode/
-*.swp
-*.swo
 
 # TypeScript
 *.tsbuildinfo
 
-# Testing
-coverage/
-
 # Misc
 *.log
-.kotlin/
-*.orig.*
+coverage/
