@@ -1,0 +1,43 @@
+{
+  "expo": {
+    "name": "Syncera",
+    "slug": "atlas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "syncera",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.blakeskor.atlas",
+      "infoPlist": {
+        "NSCameraUsageDescription": "Syncera uses the camera to scan supplement labels and extract ingredients."
+      }
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "68555e60-a985-410b-814b-a02e6dc5d318"
+      }
+    },
+    "owner": "blakeskor",
+    "android": {
+      "package": "com.blakeskor.atlas"
+    }
+  }
+}
